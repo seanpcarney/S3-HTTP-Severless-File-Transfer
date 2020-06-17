@@ -23,9 +23,10 @@ Step 1:
 ```
 In the AWS Console create a public S3 Bucket to host a static website. (Bucket A)
 Create a second private S3 bucket to receive your files (Bucket B).
+```
 
 Under Bucket B's permissions set the 'CORS Configuration' as follows:
-```
+
 
 ```
 <?xml version="1.0" encoding="UTF-8"?>
