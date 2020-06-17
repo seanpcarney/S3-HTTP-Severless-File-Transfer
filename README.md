@@ -2,7 +2,9 @@
 
 This web app creates a serverless, secure solution to upload small to large files directly into Amazon S3 via the AWS JavaScript SDK. This process eases the load on your server and sends files directly to S3 from the web browser. This solution also integrates with multipart upload for larger files. It is secured by using Identity Federation via Google OAuth 2.0. My goal for this project is to provide recording studios and music artists an easy way to upload their projects securely into S3 Glacier archival storage.
 
-![image](http://cubeupload.com/im/seanplaysmusic/FileUploaderSS.png)
+<img src="http://u.cubeupload.com/seanplaysmusic/FileUploaderSS.png"
+     alt="Markdown Monster icon"
+     style="float: left; margin-right: 10px;" />
 
 
 ### Prerequisites
