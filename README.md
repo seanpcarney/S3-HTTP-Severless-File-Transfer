@@ -72,9 +72,10 @@ Create an IAM Role with a web identity type. Use your Google Client ID as the â€
             "Resource": [
                 "YOURS3BUCKETB",
                 "YOURS3BUCKETB/*"
-            ]
-        }
-    ]
+                ]
+            }
+        ]
+    }
 ```
 
 ```
