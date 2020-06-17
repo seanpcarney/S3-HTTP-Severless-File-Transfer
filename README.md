@@ -75,7 +75,7 @@ Create an IAM Role with a web identity type. Use your Google Client ID as the â€
                 ]
             }
         ]
-    }
+}
 ```
 
 ```
