@@ -1,0 +1,27 @@
+<html lang="en">
+  <head>
+    <meta name="google-signin-scope" content="profile email">
+    <meta name="google-signin-client_id" content="<ENTER-GOOGLE-CLIENT-ID-HERE>">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script src="https://sdk.amazonaws.com/js/aws-sdk-2.696.0.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="s3-upload.js"></script>
+  </head>
+  <body>
+     <h2> Welcome to Big File Upload </h2>
+      <!-- Google Signin Button -->
+      <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark">
+      </div>
+      <!-- Select the file to upload -->
+      <div>
+         <label for="file">Choose file to upload</label>
+         <input type="file" id="file" name="file">
+         <input type="button" value="Upload to S3" onclick="upload()">
+      </div>
+      <!-- Status Of upload -->
+      <div>
+          <p> Upload Status :</p>  <p id="results"></p>
+      </div>
+      <a href="#" onclick="signOut();">Sign out</a>
+  </body>
+</html>
