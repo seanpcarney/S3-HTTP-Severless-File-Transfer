@@ -23,6 +23,8 @@ Step 1:
 ```
 In the AWS Console create a public S3 Bucket to host a static website. (Bucket A)
 Create a second private S3 bucket to receive your files (Bucket B).
+
+Note down the 'ARN' of Bucket B
 ```
 
 Under Bucket B's permissions set the 'CORS Configuration' as follows:
@@ -56,7 +58,10 @@ Note down your Google 'Client Id'.
 Step 3:
 
 ```
-Create an IAM Role with a web identity type. Use your Google Client ID as the ‘Audience’ and attach the following policy.
+Create an IAM Role with a web identity type. Use your Google Client ID as the ‘Audience’
+```
+```
+In the 'permissions' tab create a new policy and enter in the following:
 ```
 
 ```
@@ -70,8 +75,8 @@ Create an IAM Role with a web identity type. Use your Google Client ID as the �
                 "s3:*"
             ],
             "Resource": [
-                "YOURS3BUCKETB-ARN",
-                "YOURS3BUCKETB-ARN/*"
+                "YOURS3BUCKET-B-ARN",
+                "YOURS3BUCKET-B-ARN/*"
                 ]
             }
         ]
