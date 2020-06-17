@@ -21,10 +21,11 @@ This web app creates a serverless, secure solution to upload small to large file
 Step 1:
 
 ```
-In the AWS Console create a public S3 Bucket to host a static website. (Bucket A)
-Create a second private S3 bucket to receive your files (Bucket B).
-
-Note down the 'ARN' of Bucket B
+In the AWS Console create a public S3 Bucket to host a static website (Bucket A).
+Save the static web hosting index as 'index.html' Note down the Endpoint URL
+```
+```
+Create a second private S3 bucket to receive your files (Bucket B). Note down the 'ARN' of Bucket B
 ```
 
 Under Bucket B's permissions set the 'CORS Configuration' as follows:
@@ -51,6 +52,9 @@ Step 2:
 Create OAuth 2.0 credentials via Google
 ```
 Information on setting up 0Auth 2.0 via Google can be found  [HERE](https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/loading-browser-credentials-federated-id.html) and [HERE](https://blog.codecentric.de/en/2018/04/accessing-aws-resources-with-google-sign-in/)
+```
+Make sure in the Google console 'Authorized JavaScript origins' include the Bucket A endpoint URL
+```
 ```
 Note down your Google 'Client Id'.
 ```
