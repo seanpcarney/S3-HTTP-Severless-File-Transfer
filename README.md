@@ -70,8 +70,8 @@ Create an IAM Role with a web identity type. Use your Google Client ID as the â€
                 "s3:*"
             ],
             "Resource": [
-                "YOURS3BUCKETB",
-                "YOURS3BUCKETB/*"
+                "YOURS3BUCKETB-ARN",
+                "YOURS3BUCKETB-ARN/*"
                 ]
             }
         ]
