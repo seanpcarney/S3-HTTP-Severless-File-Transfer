@@ -1,6 +1,6 @@
 # S3-HTTP-Severless-File-Transfer
 
-This web app creates a serverless, secure solution to upload small to large files directly into Amazon S3 via the AWS JavaScript SDK. This process eases the load on your server and sends files directly to S3 from the web browser. This solution also integrates with multipart upload for larger files. It is secured by using Identity Federation via Google OAuth 2.0. My goal for this project is to provide recording studios and music artists an easy way to upload their projects securely into S3 Glacier archival storage.
+This web app creates a serverless, secure solution to upload small to large files directly into Amazon S3 via the AWS JavaScript SDK. This process eases the load on your server and sends files directly to S3 from the web browser. This solution also integrates with multipart upload for larger files. It is secured by using Identity Federation via Google OAuth 2.0. My goal for this project is to provide recording studios and music artists an easy way to upload their projects securely into S3 Glacier for archival storage.
 
 <img src="http://u.cubeupload.com/seanplaysmusic/FileUploaderSS.png"
      alt="Markdown Monster icon"
@@ -118,4 +118,4 @@ Once the status shows “UPLOADED” visit Bucket B and verify the file has succ
 
 ## Acknowledgments
 
-* HTML and Javascript based on an [blogpost](https://medium.com/faun/summary-667d0fdbcdae)  by Prasad Josh.
+* HTML and Javascript based on this [blogpost](https://medium.com/faun/summary-667d0fdbcdae)  by Prasad Josh.
